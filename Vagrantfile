@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
     config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
-    ansible.playbook = "playbook.yml"
+    ansible.playbook = "playbook_loadbalancer.yml"
         "web_servers" => [
           {"ip":"192.168.56.102:8080"},
           {"ip":"192.168.56.103:8080"}
@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
     config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
-    ansible.playbook = "playbook.yml"
+    ansible.playbook = "playbook_webserver1.yml"
       
 end
   end
@@ -41,7 +41,7 @@ end
     end
     config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
-    ansible.playbook = "playbook.yml"
+    ansible.playbook = "playbook_webserver2.yml"
     end
   end
 end
