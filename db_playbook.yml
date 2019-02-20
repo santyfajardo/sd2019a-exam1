@@ -2,7 +2,8 @@
   hosts: dbserver
   sudo: yes
   sudo_user: root
-  remote_user: ubuntu
+  become: true
+  become_method: sudo
   vars_files:
     - vars/main.yml
 
