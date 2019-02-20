@@ -41,4 +41,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.playbook = "webserver2_playbook.yml"
     end
   end
+  config.vm.define :database do |db|
+     db.vm.box = "centos_7"
+     db.vm.network :private_network, ip: "192.168.56.103"
+     end
+     config.vm.provision "ansible" do |ansible|
+     ansible.playbook = "db_playbook.yml"
+  end
 end
