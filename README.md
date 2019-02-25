@@ -34,6 +34,9 @@
  **3.**
  # APROVISIONAMIENTO SERVIDORES WEB
  
+ ![102](https://user-images.githubusercontent.com/35766585/53375358-06151c80-3929-11e9-8b99-23a261aaa54a.png)
+ ![103](https://user-images.githubusercontent.com/35766585/53375384-1a591980-3929-11e9-8939-2ff338739ee1.png)
+
  
  **4.** 
  # APROVISIONAMIENTO BASE DE DATOS
