@@ -45,7 +45,7 @@
 
  **5**
  # INTEGRACIÓN
- 
+ Para el tema de integracion utilizamos una branch especial llamada igualmente integration. De esta manera cada uno podia trabajar en ramas diferentes sin ser afectado por los demas compañeros. De este modo cada quien tiene la posibilidad de realizar su trabajo por separado para luego ser juntado en una sola rama llamada integration. Ademas activamos la opcion de que cada pullrequest necesita la aprovacion de uno de los integrantes de esta manera existe una barrera mas de proteccion. Pues sirve que en caso de que el archivo se encuentre dañado el compañero que revise pueda revisarlo antes de que se mezcle. 
  
  **6.**
  # REPOSITORIO GIT HUB=> https://github.com/santyfajardo/sd2019a-exam1.git
