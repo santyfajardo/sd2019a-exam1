@@ -41,6 +41,7 @@
  **4.** 
  # APROVISIONAMIENTO BASE DE DATOS
  
+ Para la base de datos se utilizo Postgresql un sistema de gestion de bases de datos relacional orientado a objetos. Para mayor informacion ingresar al archivo db-playbook.
 
  **5**
  # INTEGRACIÓN
@@ -52,7 +53,7 @@
  
  **7.**
  # PROBLEMAS ENCONTRADOS Y SOLUCIONES IMPLEMENTADAS
- 
+  Al momento de realizar el aprovisionamiento de la base de datos tuvimos dificultades con el lenguaje, dado que las plantillas encontradas hacian referencia al sistema operativo ubuntu. Por lo que debiamos buscar su semejante para centos, dado que diferentes comandos no se ejecutaban.
  
  **8.**
  # REFERENCIAS BIBLIOGRÁFICAS
