@@ -41,7 +41,7 @@
  **4.** 
  # APROVISIONAMIENTO BASE DE DATOS
  
- Para la base de datos se utilizo Postgresql un sistema de gestion de bases de datos relacional orientado a objetos. Para mayor informacion ingresar al archivo db-playbook.
+ Para la base de datos se utilizo Postgresql un sistema de gestion de bases de datos relacional orientado a objetos. Para mayor informacion ingresar al archivo db-playbook.No obstante el archivo que nos importa realmente es el archimo main que podemos encontrar dentro de la carpeta task, que se encuentra dentro de las carpetas roles y createdb. En este archivo estan estipuladas las tareas que debe cumplir para crear la base de datos. Ademas existen unas tareas que se encargan de probar si la base de datos fue creada exitosamente y ademas si el usuario tiene acceso. 
 
  **5**
  # INTEGRACIÓN
@@ -53,7 +53,8 @@
  
  **7.**
  # PROBLEMAS ENCONTRADOS Y SOLUCIONES IMPLEMENTADAS
-  Al momento de realizar el aprovisionamiento de la base de datos tuvimos dificultades con el lenguaje, dado que las plantillas encontradas hacian referencia al sistema operativo ubuntu. Por lo que debiamos buscar su semejante para centos, dado que diferentes comandos no se ejecutaban.
+ - Al momento de realizar el aprovisionamiento de la base de datos tuvimos dificultades con el lenguaje, dado que las plantillas encontradas hacian referencia al sistema operativo ubuntu. Por lo que debiamos buscar su semejante para centos, dado que diferentes comandos no se ejecutaban. 
+ - Otro aspecto que tuvimos que arreglar es que a Sebastian github no le permitia aceptar la invitacion para ser colaborador. Asi que la manera para solucionar este conflicto fue que Sebastian hiciera un fork del repositorio y luego hiciera los pull request correspondientes.
  
  **8.**
  # REFERENCIAS BIBLIOGRÁFICAS
