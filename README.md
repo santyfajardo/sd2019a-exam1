@@ -53,7 +53,8 @@
  
  **7.**
  # PROBLEMAS ENCONTRADOS Y SOLUCIONES IMPLEMENTADAS
-  Al momento de realizar el aprovisionamiento de la base de datos tuvimos dificultades con el lenguaje, dado que las plantillas encontradas hacian referencia al sistema operativo ubuntu. Por lo que debiamos buscar su semejante para centos, dado que diferentes comandos no se ejecutaban.
+ - Al momento de realizar el aprovisionamiento de la base de datos tuvimos dificultades con el lenguaje, dado que las plantillas encontradas hacian referencia al sistema operativo ubuntu. Por lo que debiamos buscar su semejante para centos, dado que diferentes comandos no se ejecutaban. 
+ - Otro aspecto que tuvimos que arreglar es que a Sebastian github no le permitia aceptar la invitacion para ser colaborador. Asi que la manera para solucionar este conflicto fue que Sebastian hiciera un fork del repositorio y luego hiciera los pull request correspondientes.
  
  **8.**
  # REFERENCIAS BIBLIOGRÁFICAS
