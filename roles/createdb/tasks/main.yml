@@ -17,12 +17,31 @@
   #notify:
    #  command: sudo postgresql-setup initdb
 
-- name: create cluster postgresql
-  shell: postgresql-setup initdb
+#- name: create cluster postgresql
+#  shell: postgresql-setup initdb
   
 - name: Ensure the PostgreSQL service is running
   service: name=postgresql state=started enabled=yes
 
+- name: instalando mongodb
+  yum:
+    name: mongodb-org
+
+- name: config mongo
+  copy:
+    src: /home/distribuidosjsgd/Documentos/parcial1sd/playbooks/files/mongod.conf.j2
+    dest: /etc/mongod.conf
+    remote_src: false
+
+- name: iniciando mongo
+  service:
+    name: mongod
+    state: started
+    enabled: yes
+
+- name: creando db mongo
+  command: mongo --eval="db.getSiblingDB('bibliotecadb').createCollection('libros')"
+     
 - name: Ensure database is created
   become: true
   become_user: postgres

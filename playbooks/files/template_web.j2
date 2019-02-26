@@ -1,24 +1,28 @@
-const http = require('http');
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://192.168.56.104:27017/";
-var datodb = "";
-
-MongoClient.connect(url, function(err, db){
-if(err){
-
-}else{
-var dbo = db.db("biblioteca");
-dbo.collection("libros").findOne({}, function(err, result) {
-if (err) throw err;
-console.log(result.name);
-datodb = result.name;
-db.close();
-}
-
-
 var os = require('os');
+var http = require('http');
 var ifaces = os.networkInterfaces();
 var app = "";
+
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://192.168.56.104:27017/";
+
+var resultadodb = "";
+
+MongoClient.connect(url, function(err, db) {
+
+ if(err) throw err;
+ var dbo = db.db("bibliotecadb");
+ var query = {nombre: "Titanic"};
+ dbo.collection("libros").find(query).toArray(function(err, result) {
+ 
+  if(err) throw err;
+  console.log(result);
+  resultadodb=result[0].nombre;
+  console.log(resultadodb);
+  db.close();
+});
+}); 
+
 
 Object.keys(ifaces).forEach(function (ifname) {
   var alias = 0;
@@ -48,7 +52,7 @@ const port = 8080;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n i am '+ app +'\n' + 'este es dato de la db ' + datodb);
+  res.end('Hello World\n i am '+ app +'\n' + 'este es dato de la db '+resultadodb);
 });
 
 server.listen(port, hostname, () => {
