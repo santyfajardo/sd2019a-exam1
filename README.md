@@ -41,7 +41,7 @@
  **4.** 
  # APROVISIONAMIENTO BASE DE DATOS
  
- Para la base de datos se utilizo Postgresql un sistema de gestion de bases de datos relacional orientado a objetos. Para mayor informacion ingresar al archivo db-playbook.
+ Para la base de datos se utilizo Postgresql un sistema de gestion de bases de datos relacional orientado a objetos. Para mayor informacion ingresar al archivo db-playbook.No obstante el archivo que nos importa realmente es el archimo main que podemos encontrar dentro de la carpeta task, que se encuentra dentro de las carpetas roles y createdb. En este archivo estan estipuladas las tareas que debe cumplir para crear la base de datos. Ademas existen unas tareas que se encargan de probar si la base de datos fue creada exitosamente y ademas si el usuario tiene acceso. 
 
  **5**
  # INTEGRACIÓN
