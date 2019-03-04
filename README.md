@@ -1,5 +1,5 @@
 **1.**
-# Examen 1
+# Examen 2
 
 **Integrantes:** Santiago Fajardo, Sebastian Garcia y Marisol Giraldo
 
