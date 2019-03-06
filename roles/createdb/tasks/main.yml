@@ -29,7 +29,7 @@
 
 - name: config mongo
   copy:
-    src: /home/distribuidosjsgd/Documentos/parcial1sd/playbooks/files/mongod.conf.j2
+    src: /playbooks/files/mongod.conf.j2
     dest: /etc/mongod.conf
     remote_src: false
 
